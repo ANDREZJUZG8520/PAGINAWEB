@@ -1,0 +1,237 @@
+/* RESET GENERAL */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: none;
+}
+
+/* TIPOGRAFÍA GLOBAL */
+body {
+  font-family: "Overpass", sans-serif;
+}
+
+/* COLORES BASE */
+:root {
+  --primary-gradient: linear-gradient(135deg, #ff7a85, #ff3d54);
+  --text-white: #ffffff;
+  --btn-bg: #ffffff;
+  --btn-text: #ff3d54;
+}
+
+/* NAVBAR */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px 60px;
+  background: var(--primary-gradient);
+}
+
+/* IZQUIERDA */
+.nav-left {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.logo {
+  width: 80px;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 25px;
+}
+
+.nav-links a {
+  color: var(--text-white);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+/* DERECHA */
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.login {
+  color: var(--text-white);
+  text-decoration: none;
+}
+
+/* BOTÓN */
+.btn {
+  background: var(--btn-bg);
+  color: var(--btn-text);
+  padding: 10px 20px;
+  border-radius: 20px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: rgba(255, 255, 255, 0.8);
+}
+/* ALTURAS */
+.navbar {
+    height: 20vh; /* 20% de la pantalla */
+}
+
+.header {
+    height: 30vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: linear-gradient(135deg, #ff7a85, #ff525d);
+    color: white;
+
+    gap: 20px;
+}
+
+/* TEXTOS */
+.header h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+.header h3 {
+    font-size: 1.2rem;
+    font-weight: 300;
+    color: rgba(255,255,255,0.8);
+}
+
+/* BOTONES */
+.header-buttons {
+    display: flex;
+    gap: 15px;
+}
+
+/* BOTÓN BLANCO (como el anterior) */
+.btn-primary {
+    background: white;
+    color: #ff525d;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 25px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+/* BOTÓN TRANSPARENTE */
+.btn-outline {
+    background: transparent;
+    color: white;
+    border: 2px solid white;
+    padding: 12px 25px;
+    border-radius: 25px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+/* SECCIONES GENERALES */
+.section {
+    padding: 60px;
+}
+
+/* ALTURAS */
+.section-white {
+    background: white;
+    color: #333;
+    min-height: 40vh;
+}
+
+.section-purple {
+    background: linear-gradient(135deg, #2c2d3f, #3f4164);
+    color: white;
+    min-height: 40vh;
+    display: flex;
+    align-items: center;
+}
+
+/* CONTENIDO FLEX */
+.content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+/* TEXTO */
+.text {
+    flex: 1;
+}
+
+.text h3 {
+    margin-bottom: 10px;
+}
+
+.text p {
+    margin-bottom: 20px;
+}
+
+/* IMAGEN */
+.image {
+    flex: 1;
+}
+
+.image img {
+    width: 100%;
+}
+
+/* TITULO SECCION */
+.section h2 {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    .content {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+
+/* FOOTER */
+.footer {
+  background: #1d1f2e;
+  color: white;
+  padding: 60px;
+}
+
+/* LOGO */
+.footer img {
+  width: 80px; /* igual que navbar */
+  margin-bottom: 40px;
+}
+
+/* COLUMNAS */
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-container div {
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* LINKS */
+.footer a {
+  text-decoration: none;
+  color: rgba(255,255,255,0.7);
+}
+
+.footer a:hover {
+  color: white;
+}
